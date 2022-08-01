@@ -28,4 +28,4 @@ git-tutorial.pdf
 *.fls
 *.fdb*
 .~lock*
-
+*.swp

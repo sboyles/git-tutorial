@@ -13,6 +13,53 @@
 \section{Introduction}
 \label{sec:introduction}
 
+Git is a version control system that is very useful for working on projects that are collaborative; where you need to track a history of changes; and where you may have multiple versions of the same files (for instance, different versions of a paper based on journal formatting guidelines).
+The ``track changes'' feature in Word is a primitive version of this --- you can see the last round of changes made (at least until someone accepts the changes) but it becomes messy very quickly if you want to look at much earlier versions of a document.
+Another ``primitive'' way to do this is to copy files and rename them as needed --- but this gets messy too, how many times have you seen a file with a name like \ttt{trbpaper\_v2\_sdbedits\_newlitreview.docx}?
+Git is a solution that scales much better to large collaborative projects, and in fact allows you to store the \emph{entire} history of the project.
+Like most tools, there is a learning curve to Git.
+Initially, it will take longer to figure out how to do things; but in the long run it will save you a lot of time and effort when working on large projects.  
+
+The key features of Git are:
+\begin{enumerate}
+\item The \emph{complete} history of \emph{all} files in the project is stored.
+At any time, you can ``back up'' to an earlier version or compare versions.
+In other words, you can be fearless about deleting or reorganizing text or even files in the project.
+If you ever want to go back to an earlier version, you can.
+\item The project history is labeled with \emph{commit messages} which indicate who made the changes, and a summary of what changes they made.
+In a collaborative project, this lets you quickly review what work your teammates have done.
+You can also view a detailed \emph{diff} which shows every single change they made.
+\item You can organize the history in \emph{branches}.
+Rather than the project history being linear (version 1, followed by version 2, etc.), you can maintain several versions of the files simultaneously.
+For instance, you may have one version of a report which is formatted for the TRB conference, and another version formatted for a journal submission.
+Or you may be trying out something experimental: a new feature in the code, a major reorganization of the code to clean things up, a new way to organize the paper.
+You can try out your changes in a \emph{branch} while allowing others to continue working on the main project branch.
+If you decide your changes should be incorporated back into the main version, you can do so by \emph{merging}.
+Otherwise, there is no harm in abandoning a branch.
+You can always return to it later.
+\end{enumerate}
+
+You can use Git for almost any project.
+It is most useful when working with plain text files (e.g., source code, \LaTeX, HTML), with a few ``static'' files like images or plots that do not change very often.
+This document has a brief tutorial, but like most tools you do not really learn how to use it until you start using it for your own projects.
+I encourage you to experiment with Git for some of your own personal projects until you become more comfortable with it.
+
+This document focuses on the web interface through Github, but this is not the only way to use Git.
+There is a command-line interface for the ``actual'' Git program, which is more powerful.
+Github is a web interface for Git which is currently operated by Microsoft.
+The underlying Git program is free and open-source.
+Once you are comfortable with the basic operations through Github, you may want to explore the command line version.
+
+Github is very widely used in software development, and there is a large online community for support.
+You can find answers to many common questions with a Google search, or by reading other tutorials.
+The rest of this document is organized as follows.
+Section~\ref{sec:terminology} introduces basic terminology used in Git.
+Section~\ref{sec:github} shows how to use the Github web interface to work with projects.
+Section~\ref{sec:tutorial} has you create a copy of the Github project hosting this tutorial (yes, I created this tutorial as a Git project!) and modify it in a few ways.
+Section~\ref{sec:bestpractices} concludes with a set of guidelines and best practices.
+
+If you have any questions, please feel free to reach out to me!
+
 \section{Basic terminology}
 \label{sec:terminology}
 
