@@ -1,0 +1,31 @@
+# Ignore output file
+git_tutorial.pdf
+
+# Ignore various tex files
+*.aux
+*.glo
+*.idx
+*.log
+*.toc
+*.ist
+*.acn
+*.acr
+*.alg
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.synctex.gz
+*.fls
+*.fdb*
+.~lock*
+
