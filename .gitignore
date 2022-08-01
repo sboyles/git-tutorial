@@ -1,5 +1,5 @@
 # Ignore output file
-git_tutorial.pdf
+git-tutorial.pdf
 
 # Ignore various tex files
 *.aux

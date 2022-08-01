@@ -1,0 +1,85 @@
+%%%%%%%%%
+% General information to include as a header file
+
+%%%%% Packages to include
+
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{bm}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage[pdftex]{graphicx}
+\usepackage{multirow}
+\usepackage{nag}
+\usepackage{natbib}
+\usepackage{verbatim}
+\usepackage{subfigure}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage[dvipsnames]{xcolor}
+
+
+%%%%% Bibliography style
+
+\bibliographystyle{chicago}
+
+%%%%% Set margins
+
+\pdfpagewidth 8.5in
+\pdfpageheight 11in
+\setlength\topmargin{0in}
+\setlength\headheight{0in}
+\setlength\headsep{0in}
+\setlength\textheight{9in}
+\setlength\textwidth{6.5in}
+\setlength\oddsidemargin{0in}
+\setlength\evensidemargin{0in}
+\setlength\parindent{0in}
+\setlength\parskip{0.15in}
+
+%%%%% Theorem definitions
+
+\newtheorem{exm}{Example}
+\newtheorem{dfn}{Definition}
+\newtheorem{cor}{Corollary}
+\newtheorem{lem}{Lemma}
+\newtheorem{prp}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{com}{Comment}
+
+%%%%% Assorted macros and commands
+
+
+\newcommand{\mb}[1]{\mathbf{#1}} % Abbreviation for bold math
+\newcommand{\mr}[1]{\mathrm{#1}} % Abbreviation for regular text in equations
+\newcommand{\mc}[1]{\mathcal{#1}} % Abbreviation for script math
+\newcommand{\mbb}[1]{\mathbb{#1}} % Abbreviation for blackboard bold
+\newcommand{\bbr}{\mbb{R}} % Abbreviation for set of real numbers
+\newcommand{\bbc}{\mbb{C}} % Abbreviation for set of complex numbers
+\newcommand{\bbz}{\mbb{Z}} % Abbreviation for set of integers
+
+\newcommand{\myp}[1]{\left( #1 \right)} % Correct-sized parentheses () 
+\newcommand{\mys}[1]{\left[ #1 \right]} % Correct-sized square brackets []
+\newcommand{\myc}[1]{\left\{ #1 \right\}} % Correct-sized curly brackets {}
+
+\newcommand{\pdr}[2]{\frac{\partial #1}{\partial #2}} % Partial derivatives
+\newcommand{\pdrb}[2]{\frac{\partial^2 #1}{\partial #2^2}} % Second partial derivative
+\newcommand{\pdrc}[3]{\frac{\partial^2 #1}{\partial #2 \partial #3}} % Mixed second partial derivative
+\newcommand{\ttt}{\texttt} % Typewriter font in regular text
+\newcommand{\ds}{\displaystyle} % Forces full equation size in regular text
+\newcommand{\vect}[1]{\begin{bmatrix} #1 \end{bmatrix}} % Create vectors and matrices
+\newcommand{\minivect}[1]{\mys{\begin{matrix} #1 \end{matrix}}} % Create vectors and matrices
+\newcommand{\labeleqn}[2]{\begin{equation} #2 \label{eqn:#1} \end{equation}} % Create an equation with a label
+\newcommand{\nolabeleqn}[1]{\begin{equation} #1 \end{equation}} % Create an equation with no label
+\newcommand{\eqn}[1]{\eqref{eqn:#1}} % Refer to an equation
+\newcommand{\genfig}[4]{\begin{figure} \centering \includegraphics[#4]{#2} \caption{#3 \label{fig:#1}} \end{figure}}
+\newcommand{\stevefig}[3]{\begin{figure} \centering \includegraphics[width=#3]{#1.pdf} \caption{#2 \label{fig:#1}} \end{figure}}
+\newcommand{\citeapos}[1]{\citeauthor{#1}'s (\citeyear{#1})}
+\newcommand{\citeaposint}[2]{\citeauthor{#1}'s {#2} (\citeyear{#1})}
+\newcommand{\solution}[1]{\textbf{Solution.} #1 $\blacksquare$}
+\newcommand{\optimize}[1]{\[ \begin{array}{>{\ds}r>{\ds}l>{\ds}l} #1 \end{array} \]} % Creates a formatted optimization problem
+
